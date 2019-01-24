@@ -1,22 +1,16 @@
 package com.example.agradinarul.bottomsheettech;
 
-import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -26,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 	
 	private Unbinder unbinder;
 	private BottomSheetBehavior<ConstraintLayout> sheet;
-	private FragmentManager mfm;
 	
 	@Nullable
 	@BindView(R.id.include_bottom_sheet)
@@ -49,10 +42,6 @@ public class MainActivity extends AppCompatActivity {
 		
 		setupSheet();
 		fab.setScaleType(ImageView.ScaleType.CENTER);
-	}
-	
-	private void setupFragmentManager(){
-	
 	}
 	
 	private void setupSheet(){
@@ -93,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
 	
 	private void openSheetDialog(){
 		BottomSheetDialog dialog = new BottomSheetDialog();
-		
 		dialog.show(this.getSupportFragmentManager(), BottomSheetDialog.TAG);
 	}
 	
@@ -105,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
 	
 	@OnClick(R.id.toolbar_sheet_dialog)
 	void onSheetDialogButtonClick(){
-		Toast.makeText(this, "Open Dialog", Toast.LENGTH_SHORT).show();
 		openSheetDialog();
 	}
 	

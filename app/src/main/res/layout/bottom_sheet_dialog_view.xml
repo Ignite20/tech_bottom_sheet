@@ -2,6 +2,7 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/bottom_sheet_view"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
@@ -15,7 +16,7 @@
 		android:layout_width="48dp"
 		android:layout_height="48dp"
 		android:layout_marginTop="16dp"
-		android:src="@drawable/ic_cloud_upload_black_24dp"
+		android:src="@drawable/ic_rv_hookup_black_24dp"
 		app:layout_constraintEnd_toStartOf="@+id/imageView3"
 		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toStartOf="parent"
@@ -26,8 +27,8 @@
 		android:layout_width="48dp"
 		android:layout_height="48dp"
 		android:layout_marginTop="16dp"
-		android:src="@drawable/ic_keyboard_voice_black_24dp"
-		app:layout_constraintEnd_toEndOf="parent"
+		android:src="@drawable/ic_pool_black_24dp"
+		app:layout_constraintEnd_toStartOf="@+id/imageView4"
 		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toEndOf="@+id/imageView2"
 		app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +38,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="8dp"
-		android:text="Upload"
+		android:text="RV Hook"
 		app:layout_constraintEnd_toEndOf="@+id/imageView2"
 		app:layout_constraintStart_toStartOf="@+id/imageView2"
 		app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -47,10 +48,31 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="8dp"
-		android:text="Record"
+		android:text="Pool"
 		app:layout_constraintEnd_toEndOf="@+id/imageView3"
 		app:layout_constraintStart_toStartOf="@+id/imageView3"
 		app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+	<ImageView
+		android:id="@+id/imageView4"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:layout_marginTop="16dp"
+		android:src="@drawable/ic_spa_black_24dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/imageView3"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textView4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="Spa"
+		app:layout_constraintEnd_toEndOf="@+id/imageView4"
+		app:layout_constraintStart_toStartOf="@+id/imageView4"
+		app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
