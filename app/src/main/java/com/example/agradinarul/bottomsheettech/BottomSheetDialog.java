@@ -8,15 +8,13 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.FragmentManager;
 
 public class BottomSheetDialog extends BottomSheetDialogFragment {
 	
 	public static final String TAG = "my_dialog";
 	
-	private FragmentManager mfm;
 	public BottomSheetDialog() {
-	
+		// empty constructor
 	}
 	
 	@Nullable
@@ -28,11 +26,5 @@ public class BottomSheetDialog extends BottomSheetDialogFragment {
 	@Override
 	public void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-	}
-	
-	public void show(){
-		if(getFragmentManager() != null) {
-			this.show(getFragmentManager(), TAG);
-		}
 	}
 }

@@ -19,7 +19,10 @@ import butterknife.Unbinder;
 public class MainActivity extends AppCompatActivity {
 	
 	private Unbinder unbinder;
+	
 	private BottomSheetBehavior<ConstraintLayout> sheet;
+	@BindView(R.id.toolbar_sheet_dialog)
+	protected ImageView sheetDialogButton;
 	
 	@Nullable
 	@BindView(R.id.include_bottom_sheet)
@@ -27,10 +30,6 @@ public class MainActivity extends AppCompatActivity {
 	
 	@BindView(R.id.fab_action)
 	protected FloatingActionButton fab;
-	
-	@BindView(R.id.toolbar_sheet_dialog)
-	protected ImageView sheetDialogButton;
-	
 	
 	@BindView(R.id.imageView)
 	protected ImageView mImageView;
@@ -73,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
 						fab.setScaleX(scaler);
 						fab.setScaleY(scaler);
 					}
-					
-					
 				}
 			});
 		}
